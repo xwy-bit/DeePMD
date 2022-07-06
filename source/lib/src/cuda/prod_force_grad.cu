@@ -108,6 +108,9 @@ void prod_force_grad_a_gpu_cuda(
         grad, env_deriv, nlist, nloc, nnei);
     DPErrcheck(cudaGetLastError());
     DPErrcheck(cudaDeviceSynchronize());
+    //TEST USAGE
+    // printf("used in program!\n");
+    
 }
 
 template<typename FPTYPE>
