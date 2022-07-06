@@ -461,6 +461,11 @@ __global__ void compute_env_mat_a(
       row_descript[idx_value] -= avg[type[bid] * ndescrpt + idx_value] / std[type[bid] * ndescrpt + idx_value];
     }
   }
+
+  //<<<<<<<TEST<<<<<<<
+  //printf("used in program!\n"); // TEST USAGE
+  
+  //>>>>>>TEST>>>>>>>>
 }
 
 template<
