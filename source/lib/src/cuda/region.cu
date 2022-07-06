@@ -1,7 +1,7 @@
 #include "device.h"
 #include "region.h"
 #include "region.cuh"
-
+#include "gpu_cuda.h"
 template<typename FPTYPE>
 __global__ void _phys2Inter(
     FPTYPE *inter, 

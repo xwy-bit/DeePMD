@@ -1,5 +1,6 @@
 # libmd
 set (libname ${LIB_DEEPMD})
+# option(USE_CUDA_TOOLKIT "use cuda toolkit" ON)
 
 file(GLOB LIB_SRC src/*.cc src/*.cpp)
 file(GLOB INC_SRC include/*.h ${CMAKE_CURRENT_BINARY_DIR}/version.h)

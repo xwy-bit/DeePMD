@@ -1,6 +1,6 @@
 #include "device.h"
 #include "neighbor_list.h"
-
+#include "gpu_cuda.h"
 #include <cub/block/block_scan.cuh>
 // A stateful callback functor that maintains a running prefix to be applied
 // during consecutive scan operations.

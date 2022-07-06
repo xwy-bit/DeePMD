@@ -1,6 +1,6 @@
 #include "device.h"
 #include "prod_force_grad.h"
-
+#include "gpu_cuda.h"
 template<typename FPTYPE>
 __device__ inline FPTYPE dev_dot(
     const FPTYPE * arr1, 

@@ -1,6 +1,6 @@
 #include "gelu.h"
 #include "device.h"
-
+#include "gpu_cuda.h"
 __device__ inline double _tanh(double x) {return tanh(x);}
 __device__ inline float _tanh(float x) {return tanhf(x);}
 

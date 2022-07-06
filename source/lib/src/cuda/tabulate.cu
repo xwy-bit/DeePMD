@@ -1,6 +1,6 @@
 #include "device.h"
 #include "tabulate.h"
-
+#include "gpu_cuda.h"
 #define MM 4
 #define KK 4
 #define TPB 256

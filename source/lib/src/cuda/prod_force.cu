@@ -1,6 +1,6 @@
 #include "device.h"
 #include "prod_force.h"
-
+#include "gpu_cuda.h"
 template <
     typename FPTYPE,
     int      THREADS_PER_BLOCK>

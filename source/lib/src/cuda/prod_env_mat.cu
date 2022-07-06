@@ -4,6 +4,7 @@
 #include <cub/block/block_load.cuh>
 #include <cub/block/block_store.cuh>
 #include <cub/block/block_radix_sort.cuh>
+#include "gpu_cuda.h"
 
 __device__ inline double _sqrt(double x) {return sqrt(x);}
 __device__ inline float _sqrt(float x) {return sqrtf(x);}
@@ -70,6 +71,13 @@ __device__ inline void spline5_switch(
     FPTYPE du = (FPTYPE)1. / (rmax - rmin) ;
     vv = uu*uu*uu * ((FPTYPE)-6. * uu*uu + (FPTYPE)15. * uu - (FPTYPE)10.) + (FPTYPE)1.;
     dd = ( (FPTYPE)3. * uu*uu * ((FPTYPE)-6. * uu*uu + (FPTYPE)15. * uu - (FPTYPE)10.) + uu*uu*uu * ((FPTYPE)-12. * uu + (FPTYPE)15.) ) * du;
+    
+    // //<<<<<<<TEST<<<<<<<
+    // dd = (FPTYPE)0.;
+    // vv = (FPTYPE)0.;
+    // //>>>>>>>TEST>>>>>>>
+    // TEST RESULT >>> INSIGNIFICANT
+
   }
   else {
     dd = (FPTYPE)0.;

@@ -1,7 +1,7 @@
 #include "device.h"
 #include "coord.h"
 #include "region.cuh"
-
+#include "gpu_cuda.h"
 __device__ inline int collapse_index(
     const int * idx,
     const int * size)
